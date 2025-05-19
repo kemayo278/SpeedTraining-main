@@ -1,8 +1,6 @@
 import type React from "react"
 import { Inter, Lato } from "next/font/google"
 import { ThemeProvider } from "@/components/theme-provider"
-import { SiteHeader } from "@/components/site-header"
-import { SiteFooter } from "@/components/site-footer"
 
 import "./globals.css"
 import { NavigationProgress } from "@/components/ui/nprogress"
@@ -20,9 +18,9 @@ const lato = Lato({
 })
 
 export const metadata = {
-  title: "Kokitech Group Academy - Plateforme E-learning",
+  title: "Speed-Training - Plateforme E-learning",
   description: "Développez vos compétences avec des formations de qualité dans divers domaines",
-    generator: 'v0.dev'
+  generator: 'DensEmpire'
 }
 
 export default function RootLayout({
