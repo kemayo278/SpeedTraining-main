@@ -1,3 +1,5 @@
+'use client'
+
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowLeft, BookOpen, Calendar, Clock, Download, Globe, Play, Share2, Star, Users } from "lucide-react"
@@ -19,20 +21,20 @@ export default function CourseDetailPage() {
       "Apprenez à créer des applications web complètes avec les technologies modernes. Ce cours couvre HTML, CSS, JavaScript, React, Node.js, et les bases de données.",
     longDescription:
       "Ce cours complet de développement web full stack vous permettra d'acquérir toutes les compétences nécessaires pour créer des applications web modernes et performantes. Vous apprendrez les fondamentaux du développement front-end avec HTML, CSS et JavaScript, puis vous approfondirez vos connaissances avec des frameworks modernes comme React. Côté back-end, vous découvrirez Node.js, Express et les bases de données relationnelles et NoSQL. À la fin de cette formation, vous serez capable de concevoir, développer et déployer des applications web complètes.",
-    price: "499€",
+    price: "49900 XAF",
     image: "/images/code.jpeg?height=250&width=350",
     category: "Développement",
     level: "Intermédiaire",
-    duration: "12 semaines",
+    duration: "20 semaines",
     isNew: true,
     rating: 4.8,
-    students: 1245,
-    lastUpdated: "Avril 2023",
+    students: 30,
+    lastUpdated: "Octobre 2025",
     language: "Français",
     instructor: {
-      name: "Jean Dupont",
+      name: "Denis Kema",
       title: "Développeur Senior & Formateur",
-      bio: "Jean est développeur full stack depuis plus de 10 ans. Il a travaillé pour plusieurs startups et grandes entreprises avant de se consacrer à l'enseignement.",
+      bio: "Denis est développeur full stack depuis plus de 4 ans. Il a travaillé pour plusieurs startups et grandes entreprises avant de se consacrer à l'enseignement.",
       avatar: "/placeholder.svg?height=100&width=100",
     },
     modules: [
@@ -107,7 +109,7 @@ export default function CourseDetailPage() {
                 </div>
                 <div className="flex items-center">
                   <Calendar className="mr-1 h-4 w-4 text-muted-foreground" />
-                  <span>Mis à jour {course.lastUpdated}</span>
+                  <span>Debut :  {course.lastUpdated}</span>
                 </div>
                 <div className="flex items-center">
                   <Globe className="mr-1 h-4 w-4 text-muted-foreground" />
@@ -143,7 +145,7 @@ export default function CourseDetailPage() {
                     <Button className="w-full" size="lg">
                       S'inscrire à cette formation
                     </Button>
-                    <Button variant="outline" className="w-full">
+                    <Button variant="outline" disabled className="w-full">
                       Essayer gratuitement
                     </Button>
                   </div>
