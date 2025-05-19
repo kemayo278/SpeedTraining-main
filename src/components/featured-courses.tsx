@@ -41,7 +41,7 @@ export function FeaturedCourses() {
                 <div className="flex items-center justify-between w-full">
                   <p className="font-medium">{course.price}</p>
                   <Button asChild variant="ghost" size="sm">
-                    <Link href={`/courses/${course.id}`}>
+                    <Link href={`/courses/detail`}>
                       Voir le détail <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
                   </Button>
