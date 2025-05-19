@@ -214,7 +214,7 @@ const specializations = [
     title: "Développeur Full Stack JavaScript",
     description:
       "Maîtrisez le développement web moderne avec JavaScript, de la conception d'interfaces utilisateur réactives à la création d'API robustes et de bases de données évolutives.",
-    price: "1499€",
+    price: "149900 XAF",
     image: "/placeholder.svg?height=400&width=400",
     level: "Intermédiaire",
     duration: "6 mois",
@@ -228,7 +228,7 @@ const specializations = [
     title: "Data Science & Intelligence Artificielle",
     description:
       "Plongez dans le monde de la data science et de l'IA en apprenant à collecter, analyser et interpréter des données pour créer des modèles prédictifs et des solutions d'intelligence artificielle.",
-    price: "1899€",
+    price: "189900 XAF",
     image: "/placeholder.svg?height=400&width=400",
     level: "Avancé",
     duration: "8 mois",
@@ -242,7 +242,7 @@ const specializations = [
     title: "UX/UI Design & Product Management",
     description:
       "Apprenez à concevoir des produits numériques centrés sur l'utilisateur, de la recherche utilisateur à la conception d'interfaces, en passant par la gestion de produit et le prototypage.",
-    price: "1299€",
+    price: "129900 XAF",
     image: "/placeholder.svg?height=400&width=400",
     level: "Tous niveaux",
     duration: "5 mois",
@@ -256,7 +256,7 @@ const specializations = [
     title: "Marketing Digital & Growth Hacking",
     description:
       "Développez des compétences avancées en marketing digital et growth hacking pour acquérir, convertir et fidéliser des clients à grande échelle avec des ressources limitées.",
-    price: "1199€",
+    price: "119900 XAF",
     image: "/placeholder.svg?height=400&width=400",
     level: "Intermédiaire",
     duration: "4 mois",
@@ -270,7 +270,7 @@ const specializations = [
     title: "Cybersécurité & Ethical Hacking",
     description:
       "Apprenez à protéger les systèmes informatiques contre les menaces et vulnérabilités en maîtrisant les techniques de cybersécurité et de piratage éthique.",
-    price: "1699€",
+    price: "169900 XAF",
     image: "/placeholder.svg?height=400&width=400",
     level: "Avancé",
     duration: "7 mois",
