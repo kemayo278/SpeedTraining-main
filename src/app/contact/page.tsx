@@ -58,7 +58,7 @@ export default function ContactPage() {
                       <Mail className="h-6 w-6 text-primary" />
                       <div className="grid gap-1">
                         <h3 className="text-base font-medium">Email</h3>
-                        <p className="text-sm text-gray-500 dark:text-gray-400">contact@kokitech-academy.com</p>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">contact@speed-training.com</p>
                       </div>
                     </div>
                     <div className="flex items-start gap-4">
@@ -75,7 +75,7 @@ export default function ContactPage() {
                         <p className="text-sm text-gray-500 dark:text-gray-400">
                           123 Avenue de la Tech
                           <br />
-                          75001 Paris, France
+                          75001 Douala Yassa
                         </p>
                       </div>
                     </div>
