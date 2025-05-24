@@ -156,7 +156,21 @@ export default function CalendarPage() {
   )
 }
 
-const upcomingEvents = [
+type BadgeVariant = "default" | "secondary" | "destructive" | "outline" | null | undefined;
+
+interface UpcomingEvent {
+  title: string;
+  description: string;
+  date: string;
+  time: string;
+  type: string;
+  icon: React.ElementType;
+  colorClass: string;
+  badgeVariant: BadgeVariant;
+  actionText: string;
+}
+
+const upcomingEvents: UpcomingEvent[] = [
   {
     title: "Session live: Introduction à React",
     description: "Session interactive avec l'instructeur pour découvrir les fondamentaux de React",
