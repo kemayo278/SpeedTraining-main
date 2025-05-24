@@ -20,7 +20,7 @@ export default function DashboardLayout({
   children: React.ReactNode
 }) {
   return (
-    <SidebarProvider defaultOpen={false}>
+    <SidebarProvider defaultOpen={true}>
       <div className="flex min-h-screen">
         <Sidebar>
           <SidebarHeader className="border-b pb-0">

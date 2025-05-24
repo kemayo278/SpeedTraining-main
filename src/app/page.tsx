@@ -30,8 +30,8 @@ export default function Home() {
                   reconnues.
                 </p>
               </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button asChild size="lg" className="bg-kokitech-blue hover:bg-kokitech-darkBlue">
+              <div className="flex flex-col gap-2 md:flex-row">
+                <Button asChild size="lg" className="bg-kokitech-blue hover:bg-kokitech-darkBlue dark:text-white">
                   <Link href="/courses">
                     Découvrir nos formations <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>

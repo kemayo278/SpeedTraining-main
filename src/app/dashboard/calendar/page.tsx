@@ -129,8 +129,7 @@ export default function CalendarPage() {
                       <p className="font-medium">{event.title}</p>
                       <p className="text-sm text-muted-foreground">{event.description}</p>
                     </div>
-                    {/* <Badge variant={event.badgeVariant}>{event.type}</Badge> */}
-                    <Badge>{event.type}</Badge>
+                    <Badge variant={event.badgeVariant}>{event.type}</Badge>
                   </div>
                   <div className="flex items-center mt-2 text-sm text-muted-foreground">
                     <Calendar className="mr-1 h-4 w-4" />

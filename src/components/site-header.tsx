@@ -120,7 +120,7 @@ export function SiteHeader() {
                   <Link href="/auth/login">Se connecter</Link>
                 </Button>
                 <Button asChild>
-                  <Link href="/auth/register">S'inscrire</Link>
+                  <Link href="/auth/register" className="bg-kokitech-blue">S'inscrire</Link>
                 </Button>
               </div>
             )}
@@ -168,14 +168,14 @@ export function SiteHeader() {
                   ) : (
                     <>
                       <Link
-                        href="/signin"
+                        href="/auth/login"
                         className="text-sm font-medium transition-colors hover:text-primary"
                         onClick={() => setIsOpen(false)}
                       >
                         Se connecter
                       </Link>
                       <Link
-                        href="/register"
+                        href="/auth/register"
                         className="text-sm font-medium transition-colors hover:text-primary"
                         onClick={() => setIsOpen(false)}
                       >

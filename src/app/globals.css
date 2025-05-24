@@ -392,6 +392,134 @@
   --tw-prose-td-borders: var(--tw-prose-invert-td-borders);
 }
 
+/* Styles pour la sidebar */
+[data-sidebar="sidebar"] {
+  background-color: hsl(var(--sidebar-background));
+  color: hsl(var(--sidebar-foreground));
+}
+
+[data-sidebar="trigger"] {
+  color: hsl(var(--sidebar-foreground));
+}
+
+[data-sidebar="header"],
+[data-sidebar="footer"] {
+  background-color: hsl(var(--sidebar-background));
+}
+
+[data-sidebar="content"] {
+  background-color: hsl(var(--sidebar-background));
+}
+
+[data-sidebar="separator"] {
+  background-color: hsl(var(--sidebar-border));
+}
+
+[data-sidebar="menu-button"] {
+  color: hsl(var(--sidebar-foreground));
+}
+
+[data-sidebar="menu-button"]:hover {
+  background-color: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-accent-foreground));
+}
+
+[data-sidebar="menu-button"][data-active="true"] {
+  background-color: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-accent-foreground));
+  font-weight: 500;
+}
+
+[data-sidebar="group-label"] {
+  color: hsl(var(--sidebar-foreground) / 0.7);
+}
+
+[data-sidebar="menu-sub"] {
+  border-color: hsl(var(--sidebar-border));
+}
+
+[data-sidebar="menu-sub-button"] {
+  color: hsl(var(--sidebar-foreground));
+}
+
+[data-sidebar="menu-sub-button"]:hover {
+  background-color: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-accent-foreground));
+}
+
+[data-sidebar="menu-sub-button"][data-active="true"] {
+  background-color: hsl(var(--sidebar-accent));
+  color: hsl(var(--sidebar-accent-foreground));
+}
+
+/* Styles pour la transition de la sidebar */
+.group\/sidebar-wrapper {
+  transition: width 0.2s ease-in-out;
+}
+
+[data-sidebar="sidebar"] {
+  transition: width 0.2s ease-in-out, left 0.2s ease-in-out, right 0.2s ease-in-out;
+}
+
+[data-sidebar="rail"] {
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Styles pour les états de la sidebar */
+[data-state="expanded"] [data-sidebar="content"] {
+  width: var(--sidebar-width);
+}
+
+[data-state="collapsed"] [data-sidebar="content"] {
+  width: var(--sidebar-width-icon);
+}
+
+[data-collapsible="icon"] [data-sidebar="group-label"],
+[data-collapsible="icon"] [data-sidebar="menu-badge"],
+[data-collapsible="icon"] [data-sidebar="menu-sub"] {
+  display: none;
+}
+
+[data-collapsible="icon"] [data-sidebar="menu-button"] > span {
+  display: none;
+}
+
+/* Ajouter ces styles à la fin du fichier globals.css */
+
+/* Styles pour gérer le positionnement du contenu principal par rapport à la sidebar */
+.flex-1 {
+  transition: margin-left 0.2s ease-in-out;
+}
+
+/* Quand la sidebar est ouverte (état expanded), repousser le contenu principal */
+[data-state="expanded"] ~ .flex-1 {
+  margin-left: var(--sidebar-width);
+}
+
+/* Quand la sidebar est en mode icône, ajuster la marge du contenu principal */
+[data-collapsible="icon"] ~ .flex-1 {
+  margin-left: var(--sidebar-width-icon);
+}
+
+/* Quand la sidebar est fermée (état collapsed), réinitialiser la marge */
+[data-state="collapsed"][data-collapsible="offcanvas"] ~ .flex-1 {
+  margin-left: 0;
+}
+
+/* Ajuster le positionnement du SidebarTrigger */
+[data-sidebar="trigger"] {
+  position: relative;
+  z-index: 20;
+}
+
+
+.dashboard-content {
+  flex: 1;
+  transition: margin-left 0.2s ease-in-out;
+}
+
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
